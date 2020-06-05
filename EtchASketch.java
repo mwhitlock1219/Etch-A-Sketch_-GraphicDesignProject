@@ -44,7 +44,15 @@ public class EtchASketch extends Canvas {
                 x += 10;
             if (e.getKeyCode() == KeyEvent.VK_LEFT)
                 x -= 10;
-            
+            if (e.getKeyCode() == KeyEvent.VK_F1)
+                cur = Color.red;
+            if (e.getKeyCode() == KeyEvent.VK_F2)
+                cur = Color.green;
+            if (e.getKeyCode() == KeyEvent.VK_F3)
+                cur = Color.blue;
+            if (e.getKeyCode() == KeyEvent.VK_F5)
+                cur = Color.black;
+
             // and we manually call paint() again to redraw
             repaint();
         }
